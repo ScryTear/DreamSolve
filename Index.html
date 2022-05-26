@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>DreamSolve</title>
+
+    <script type="text/javascript" src="Main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+
+<body>
+<section>
+    <header>
+        <img class="logo" src="Images/logo2.png" alt="logo">
+        <a class="cta" href="#"><button>Play Game</button></a>
+    </header>
+</section>
+
+<section>
+    <h1 id='time'></h1>
+
+    <script>
+
+
+            var now = new Date();
+            var hours = now.getHours();
+            var ft = now.toLocaleString("en-GB", {
+            hour: "numeric",
+            minute: "numeric",
+            hour24: true
+        });
+            if (5 <= hours && hours < 8) {//Morning
+            document.write('<body style="background: #F3904F; background: -webkit-linear-gradient(to top, #3B4371, #F3904F); background: linear-gradient(to bottom, #3B4371, #F3904F); color: white; background-size: 100% 100%;">');
+            var type = "ochtend";
+        }
+            if (8 <= hours && hours < 17) {//Day
+            document.write('<body style="background: #00B4DB; background: -webkit-linear-gradient(to bottom, #0083B0, #00B4DB); background: linear-gradient(to top, #0083B0, #00B4DB); color: white;  background-size: 100% 100%;">');
+            var type = "dag";
+        }
+            if (17 <= hours && hours < 19) {//Evening
+            document.write('<body style="background: #355C7D; background-image: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); background-image: linear-gradient(to top, #C06C84, #6C5B7B, #355C7D); color: white; background-size: 100% 100%;">');
+            var type = "avond";
+            }
+            if (19 <= hours || hours < 5) {//Night
+                document.write('<body style="background: #0f2027; background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364);  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); color : white; background-size: 100% 100%;">');
+                var type = "middernacht";
+
+            }
+            // document.getElementById("time").innerHTML = `Het is momeneteel ${ft}, het is ${type}.`;
+
+    </script>
+
+    <article>
+        <h1>Over de Game</h1>
+            <p>
+               Je speelt als een kind die wilt ontsnappen aan de realiteit via hun droom. Door op creatieve manieren hun weg te vinden in hun droom.
+                <br>
+                Spring, teken en schrijf om je doel te bereiken en laat je creativiteit los om de juiste manier te vinden.
+                <br>
+                <br>
+                In deze creative game probeer jij je creatieve zelf terug te vinden en heb je veel plezier terwijl je ermee bezig bent!
+<!--                Door te tekenen en dingen te bedenken en in te typen in de textbox, vind je door creatief na te denken de juiste manier om naar de overkant te komen en je doel te bereiken.-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <img class="character" src="Images/PixelAnimation.gif" alt="character">
+            </p>
+    </article>
+
+    <article>
+        <h1>Informatie</h1>
+        <p>
+            Nadat wij onderzoek gedaan hadden naar hoe creativiteit zichzelf vordert in het leven van een kind, zijn wij erachter gekomen dat de creativiteit steeds minder wordt namater het kind ouder wordt.
+            <br>
+            <br>
+            Dit komt vaak door toetsen en huiswerk opgaven, tot groep 5 zijn kinderen bezig met 'spelen' ze knutselen veel en doen niet echt veel aan huiswerk en andere vaardigheden.
+            <br>
+            <br>
+            In groep 5 gaan ze echt aan de slag met toetsen en leren ze dat ze geen fouten mogen maken want dat is slecht.
+            <br>
+            <br>
+            Dit is natuurlijk slecht voor de creativiteit omdat je dat juist bevorderd door fouten te maken, die te verbeteren en verder te gaan.
+            <br>
+            <br>
+            Met onze game willen wij die creativiteit bevorderen door te de kinderen te leren dat je fouten mag maken.
+            <br>
+            <br>
+            Wij hopen dat door het spelen van deze game, het kind hun creativiteit terug vind en het ook behoud.
+        </p>
+    </article>
+
+</section>
+
+</body>
+</html>
