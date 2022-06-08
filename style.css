@@ -7,6 +7,10 @@
 /*    background-color: midnightblue;*/
 /*}*/
 
+*{
+    font-weight: bold;
+}
+
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -31,7 +35,14 @@ header{
     height: auto;
 }
 
-
+.conceptCloud{
+    width: 300px;
+    height: auto;
+}
+.conceptChar{
+    width: 130px;
+    height: auto;
+}
 
 button{
     padding: 9px 25px;
@@ -55,12 +66,51 @@ p{
 }
 article{
     display: block;
-    background-color: rgb(247, 135, 201);
+    background-color: rgb(243, 107, 184);
     border-radius: 50px;
-    padding:20px;
+    padding:40px;
     margin:75px;
     color: white;
-    height:500px;
+    height:100%;
     text-align:center;
+    font-size: 18px;
 }
+
+nav, ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width:100%;
+    background-color: #292929;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    font-size: 1em;
+    font-family: "Trebuchet MS", sans-serif;
+    display: block;
+    color: #c1c0bc;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+li a:hover {
+    background-color: rgb(116, 36, 186);
+}
+article  a, article  a:visited{
+    color: rgb(116, 36, 186);
+}
+article  a:hover{
+    color: rgb(186, 72, 216);
+}
+
 
